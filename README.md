@@ -154,7 +154,7 @@ See [tools/webhook-simulator/README.md](tools/webhook-simulator/README.md) and t
 
 #### Prerequisites
 
-- Python 3.11+
+- Python 3.12+ (the version used by backend CI and the Docker image)
 - PostgreSQL 15+
 - Redis 7+
 
@@ -231,7 +231,7 @@ cd django-backend
 
 # Create Dockerfile if not exists
 cat > Dockerfile <<EOF
-FROM python:3.11-slim
+FROM python:3.12-slim
 
 WORKDIR /app
 
